@@ -1,0 +1,6 @@
+applicationType: default
+defaultPackage: com.incubyte
+testFramework: junit
+sourceLanguage: java
+buildTool: gradle
+features: [app-name, assertj, gradle, hibernate-jpa, http-client-test, java, java-application, jdbc-hikari, junit, liquibase, logback, micronaut-aot, micronaut-build, mockito, netty-server, readme, serialization-jackson, shade, test-resources, yaml, yaml-build]

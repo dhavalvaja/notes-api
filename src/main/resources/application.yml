@@ -1,0 +1,17 @@
+micronaut:
+  application:
+    name: notes
+  server:
+    port: 8080
+datasources:
+  default:
+    url: "jdbc:postgresql://localhost:5432/note-db"
+    username: postgres
+    password: mysecretpassword
+    driver-class-name: org.postgresql.Driver
+    db-type: postgres
+jpa.default.properties.hibernate.hbm2ddl.auto: none
+liquibase:
+  datasources:
+    default:
+      change-log: classpath:db/liquibase-changelog.xml
