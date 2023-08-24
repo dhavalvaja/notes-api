@@ -1,5 +1,6 @@
 package com.incubyte.user;
 
+import static org.assertj.core.api.Assertions.*;
 import static org.assertj.core.api.Assertions.assertThat;
 
 import io.micronaut.http.HttpStatus;
@@ -57,5 +58,6 @@ class UserControllerTest {
     expected.setId(1);
     expected.setName("name");
     assertThat(user).usingRecursiveComparison().isEqualTo(expected);
+    assertThat(false).isTrue();
   }
 }
