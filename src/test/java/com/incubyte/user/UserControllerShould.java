@@ -1,6 +1,5 @@
 package com.incubyte.user;
 
-import static org.assertj.core.api.Assertions.assertThat;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.verify;
 
@@ -16,7 +15,6 @@ class UserControllerShould {
     userController.getAll();
 
     verify(userService).getAll();
-    assertThat(false).isTrue();
   }
 
   @Test
