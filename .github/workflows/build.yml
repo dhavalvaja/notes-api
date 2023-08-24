@@ -1,10 +1,9 @@
 name: Build with Gradle
 
 on:
-  push:
-    branch: [ * ]
-  pull_requests:
-    branch: [ main ]
+  - [ push ]
+  - pull_requests:
+      branch: [ main ]
 
 jobs:
   build:
