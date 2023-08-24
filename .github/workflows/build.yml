@@ -9,6 +9,9 @@ on:
     branch:
       - main
 
+permissions:
+  contents: read
+
 jobs:
   build:
     runs-on: ubuntu-latest
