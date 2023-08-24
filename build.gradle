@@ -52,7 +52,7 @@ micronaut {
         annotations("com.incubyte.*")
     }
     testResources {
-        additionalModules.add("jdbc-mssql")
+        additionalModules.add("jdbc-postgresql")
     }
     aot {
         // Please review carefully the optimizations enabled below
