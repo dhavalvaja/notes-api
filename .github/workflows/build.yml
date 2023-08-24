@@ -2,7 +2,7 @@ name: Build with Gradle
 
 on:
   push:
-    branch:[ * ]
+    branch: [ * ]
   pull_requests:
     branch: [ main ]
 
