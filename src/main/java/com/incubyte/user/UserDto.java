@@ -1,7 +1,5 @@
 package com.incubyte.user;
 
-import com.fasterxml.jackson.annotation.JsonCreator;
-import com.fasterxml.jackson.annotation.JsonProperty;
 import io.micronaut.core.annotation.Introspected;
 import io.micronaut.serde.annotation.Serdeable;
 
@@ -10,8 +8,7 @@ import io.micronaut.serde.annotation.Serdeable;
 public final class UserDto {
   private String name;
 
-  @JsonCreator
-  public UserDto(@JsonProperty("name") String name) {
+  public UserDto(String name) {
     this.name = name;
   }
 
